@@ -13,8 +13,7 @@ module.exports = defineConfig({
     baseUrl: 'https://staging-automation-mgn2-a.tiendamia.net/',
     chromeWebSecurity: false,
     specPattern: 'cypress/integration/normal-script/*.{js,jsx,ts,tsx,feature}',
-    viewportHeight: 1080,
     viewportWidth: 1920,
-
+    viewportHeight: 1080
   },
 });
