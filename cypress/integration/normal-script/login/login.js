@@ -7,7 +7,7 @@ Given('A user opens the login page', ()=>{
 })
 
 When('A user enter the username {string}', (username)=>{
-    homeSaucePage.typeUsername(typeUsername)
+    homeSaucePage.typeUsername(username)
     //homeSaucePage.clicksignUp()
 })
 
