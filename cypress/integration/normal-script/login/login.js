@@ -1,14 +1,14 @@
 import {Given, When, And, Then} from "cypress-cucumber-preprocessor/steps";
-import { typeUsername } from "../../../pages/homeSaucePage";
-const homeSaucePage = require('../../../pages/homeSaucePage')
+import { typeUsername } from "../../../pages/homeTiendamiaPage";
+const homeSaucePage = require('../../../pages/homeTiendamiaPage')
 
 Given('A user opens the login page', ()=>{
     cy.visit('/')
 })
 
 When('A user enter the username {string}', (username)=>{
-    homeSaucePage.typeUsername(username)
-    //homeSaucePage.clicksignUp()
+    //homeSaucePage.typeUsername(username)
+    homeSaucePage.clicksignUp()
 })
 
 And('A user enter the password {string}', (password)=>{
