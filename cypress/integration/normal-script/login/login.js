@@ -1,32 +1,30 @@
 import {Given, When, And, Then} from "cypress-cucumber-preprocessor/steps";
-import { typeUsername } from "../../../pages/homeSaucePage";
-const homeSaucePage = require('../../../pages/homeSaucePage')
+const loginPage = require('../../../pages/loginPage')
 
 Given('A user opens the login page', ()=>{
-    cy.visit('/')
+    cy.visit('customer/account/login/');
 })
 
-When('A user enter the username {string}', (username)=>{
-    homeSaucePage.typeUsername(username)
-    //homeSaucePage.clicksignUp()
+When('A user clicks Login with Google button', () => {
+    loginPage.clickLoginGoogleButton();
 })
 
-And('A user enter the password {string}', (password)=>{
-    homeSaucePage.typePassword(password)
+When('A user enters the username: {string}', (username) => {
+    loginPage.typeUsername(username);
 })
 
-And('A user clicks the login button', ()=>{
-    homeSaucePage.clickLogin()
+And('A user enters the password: {string}', (password) => {
+    loginPage.typePassword(password);
 })
 
-And('A user clicks the login button', ()=>{
-    cy.get('#login-button').click()
+And('A user clicks the login button', () => {
+    loginPage.clickLoginButton();
 })
 
-Then('A user will be logged in', ()=>{
-    cy.url().should('contains', '/inventory.html')
+Then('The user will be logged in', () => {
+    cy.url().should('include', '/customer/account');
 })
 
-Then('A user will be receiving a failed message', ()=>{
-    homeSaucePage.elements.errorMessage().should('have.text', 'Epic sadface: Sorry, this user has been locked out.')
+Then('The user will receive the error message: {string}', (errorMessage) => {
+    loginPage.validateErrorMessage(errorMessage);
 })
