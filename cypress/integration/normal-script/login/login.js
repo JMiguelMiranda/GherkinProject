@@ -5,10 +5,6 @@ Given('A user opens the login page', ()=>{
     cy.visit('customer/account/login/');
 })
 
-When('A user clicks Login with Google button', () => {
-    loginPage.clickLoginGoogleButton();
-})
-
 When('A user enters the username: {string}', (username) => {
     loginPage.typeUsername(username);
 })
