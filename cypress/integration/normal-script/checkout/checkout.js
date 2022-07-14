@@ -1,7 +1,7 @@
 import {Given, When, And, Then} from "cypress-cucumber-preprocessor/steps";
 const loginPage = require('../../../pages/loginPage');
 const carritoPage = require('../../../pages/carritoPage');
-const productsPage = require('../../../pages/productsPage');
+const productPage = require('../../../pages/productPage');
 const checkoutPage = require('../../../pages/checkoutPage');
 
 Given('a user does the login and verifies it has an empty cart', () => {
@@ -17,8 +17,8 @@ Given('a user does the login and verifies it has an empty cart', () => {
 
 And('the user adds AMZ product {string} to the cart', (sku) => {
     cy.visit('product/amz/' + sku);
-    productsPage.clickAddToCartButton();
-    productsPage.validateCartCounterLabel();
+    productPage.clickAddToCartButton();
+    productPage.validateCartCounterLabel();
 })
 
 And('the user goes to the checkout', () => {
