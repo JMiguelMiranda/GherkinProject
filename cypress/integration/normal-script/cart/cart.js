@@ -35,5 +35,5 @@ Then('The user will see success label message', () => {
 })
 
 And('A user clicks the add product button', () => {
-    productPage.clickAddProductCard();
+    productPage.clickAddToCartButton();
 })

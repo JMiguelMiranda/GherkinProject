@@ -19,6 +19,7 @@ And('A user clicks the login button', () => {
 
 Then('The user will be logged in', () => {
     cy.url().should('include', '/customer/account');
+    loginPage.validateCustomerName();
 })
 
 Then('The user will receive the error message: {string}', (errorMessage) => {
