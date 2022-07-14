@@ -12,21 +12,37 @@ Given('a user does the login and verifies it has an empty cart', () => {
     cy.url().should('include', '/customer/account');
     loginPage.validateCustomerName();
 
-    cy.visit('checkout/cart');
-    carritoPage.clickDeleteProductButton();
-    carritoPage.validateEmptyCartLabel();
+    carritoPage.clickCartButton();
 })
 
-Given('the user adds AMZ product {string} to the cart', (sku) => {
+And('the user adds AMZ product {string} to the cart', (sku) => {
     cy.visit('product/amz/' + sku);
     productsPage.clickAddToCartButton();
     productsPage.validateCartCounterLabel();
 })
 
-And('the user goes to checkout', () => {
+And('the user goes to the checkout', () => {
     cy.visit('/checkout/#shipping');
+    checkoutPage.validateCheckoutTitle();
+    checkoutPage.savedAdressVerification();
 })
 
 When('the user fills the shipping adress data', () => {
+    checkoutPage.typeIdentificationNumber();
+    checkoutPage.typeAdress();
+    checkoutPage.selectProvince();
+    checkoutPage.typeCity();
+    checkoutPage.typeZipCode();
+    checkoutPage.typeCellphone();
+    checkoutPage.typeBirthday();
+    checkoutPage.saveAdressButton();
+    checkoutPage.clickContinueToPaymentButton();
+})
 
+And('clicks the buy button', () => {
+    checkoutPage.clickMakePaymentButton();
+})
+
+Then('the order was successfully made', () => {
+    checkoutPage.validateSuccessPurchase();
 })
