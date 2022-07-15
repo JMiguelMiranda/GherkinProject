@@ -4,24 +4,22 @@ const carritoPage = require('../../../pages/carritoPage');
 const productPage = require('../../../pages/productPage');
 const checkoutPage = require('../../../pages/checkoutPage');
 
-Given('a user does the login and verifies it has an empty cart', () => {
-    cy.visit('customer/account/login/');
+Given('a user adds AMZ product {string} to the cart', (sku) => {
+    cy.visit('product/amz/' + sku);
+    productPage.clickAddToCartButton();
+    productPage.validateSuccessAddCartLabel();
+})
+
+And('the user tries to go to the checkout but makes the login first', () => {
+    cy.visit('/checkout/#shipping');
     loginPage.typeUsername('test@yopmail.com');
-    loginPage.typePassword('Aa123123');
+    loginPage.typeLoginPassword('Aa123123');
     loginPage.clickLoginButton();
     cy.url().should('include', '/customer/account');
     loginPage.validateCustomerName();
-
-    carritoPage.clickCartButton();
 })
 
-And('the user adds AMZ product {string} to the cart', (sku) => {
-    cy.visit('product/amz/' + sku);
-    productPage.clickAddToCartButton();
-    productPage.validateCartCounterLabel();
-})
-
-And('the user goes to the checkout', () => {
+And('now the user is redirected to checkout', () => {
     cy.visit('/checkout/#shipping');
     checkoutPage.validateCheckoutTitle();
     checkoutPage.savedAdressVerification();

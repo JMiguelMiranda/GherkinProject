@@ -8,7 +8,7 @@ class carritoPage{
         confirmDeleteProductButton: () => cy.get('.action-primary')
     }
 
-    clickCartButton() {
+    validateEmptyCart() {
         cy.visit('checkout/cart')
         this.clickDeleteProductButton();
         this.validateEmptyCartLabel();
