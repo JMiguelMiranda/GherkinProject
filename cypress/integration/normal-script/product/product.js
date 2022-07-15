@@ -39,7 +39,7 @@ Then('The user will see success label message', () => {
 })
 
 Then('The user validates there are 2 products in the cart', () => {
-    carritoPage.validateProductQuantity(1);
+    carritoPage.validateProductQuantity(2);
 })
 
 And('A user clicks the add to cart button', () => {
