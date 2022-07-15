@@ -5,7 +5,7 @@ class homePage{
         productDetails: () => cy.get('.product-details-container'),
         productPrice: () => cy.get('.main-price'),
         buyProductBtn: () => cy.get('#product-checkout-button'),
-        addCaddToCartButtonartBtn: () => cy.get('#product-addtocart-button'),
+        addCaddToCartButtonBtn: () => cy.get('#product-addtocart-button'),
         cardsTypesPayments: () => cy.get('.price > .row > :nth-child(2)'),    
         successAddCartLabel: () => cy.get('.message-success > div'), 
         cartCounterLabel: () => cy.get('.counter-number'),
@@ -27,7 +27,7 @@ class homePage{
     }
 
     clickAddToCartButton(){
-        this.elements.addCaddToCartButtonartBtn().click();
+        this.elements.addCaddToCartButtonBtn().click();
     }
 
     validateProductTitle(){
