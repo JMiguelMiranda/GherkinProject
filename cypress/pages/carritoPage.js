@@ -5,7 +5,8 @@ class carritoPage{
         emptyCartLabel: () => cy.get('.cart-empty-title'),
         cartButton: () => cy.get('.minicart-wrapper > .action'),
         headerCartDeleteButton: () => cy.get('.action > img'),
-        confirmDeleteProductButton: () => cy.get('.action-primary')
+        confirmDeleteProductButton: () => cy.get('.action-primary'),
+        itemQuantityInput: () => cy.get('[data-role="cart-item-qty"]')
     }
 
     validateEmptyCart() {
@@ -26,11 +27,15 @@ class carritoPage{
         this.elements.emptyCartLabel().should('be.visible');
     }
 
+    validateProductQuantity(number){
+        this.elements.itemQuantityInput().invoke('attr', 'value').should('equal', number);
+    }
+
     clickDeleteProductButton(){
         cy.get('.page-wrapper').then(page => {
             const productExist = page.find('.button-icon-text_outlined_small').length > 0;
             if(productExist){
-                this.elements.deleteProductButton().click();
+                this.elements.deleteProductButton().click({multiple:true});
             }
         })
     }

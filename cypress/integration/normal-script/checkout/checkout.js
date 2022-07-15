@@ -12,7 +12,7 @@ Given('a user adds AMZ product {string} to the cart', (sku) => {
 
 And('the user tries to go to the checkout but makes the login first', () => {
     cy.visit('/checkout/#shipping');
-    loginPage.typeUsername('test@yopmail.com');
+    loginPage.typeLoginEmail('test@yopmail.com');
     loginPage.typeLoginPassword('Aa123123');
     loginPage.clickLoginButton();
     cy.url().should('include', '/customer/account');
