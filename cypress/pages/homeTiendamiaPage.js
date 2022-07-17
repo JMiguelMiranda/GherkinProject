@@ -12,7 +12,7 @@ class homeSaucePage{
         this.elements.usernameInput().type(username);
     }
     
-    typePassword(password){
+    typeLoginPassword(password){
         this.elements.passwordInput().type(password);
     }
 

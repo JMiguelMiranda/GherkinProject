@@ -1,19 +1,24 @@
 import {Given, When, And, Then} from "cypress-cucumber-preprocessor/steps";
+import carritoPage from "../../../pages/carritoPage";
 const productPage = require('../../../pages/productPage')
 
-Given('A user opens the the product page with AMZ', ()=>{
+Given('A user opens an Amazon product', ()=>{
     cy.visit('/product/amz/B000FZX93K');
 })
 
-Given('A user opens the the product page with Ebay', ()=>{
-    cy.visit('/product/ebay/v1%7C225073009420%7C0');
+Given('A user opens an eBay product', ()=>{
+    cy.visit('/product/ebay/v1%7C264724079628%7C564540908530');
 })
 
-Given('A user opens the the product page with WRT', ()=>{
-    cy.visit('/product/wrt/33315081');
+Given('A user opens an Walmart product', ()=>{
+    cy.visit('/product/wrt/633860434');
 })
 
-When('A user validates all information', () => {
+Given('A user opens an Macy\'s product', ()=>{
+    cy.visit('/product/mcy/8570453');
+})
+
+When('A user validates product information', () => {
     productPage.validatePaymentsTypes();
     productPage.validateProductDetails();
     productPage.validateProductPrice();
@@ -26,7 +31,6 @@ And('A user clicks the buy button', () => {
 })
 
 Then('The user will be on the cart page', () => {
-   cy.wait(2000);
    cy.url().should('include', '/checkout/cart/');
 })
 
@@ -34,6 +38,10 @@ Then('The user will see success label message', () => {
     productPage.validateSuccessAddCartLabel();
 })
 
-And('A user clicks the add product button', () => {
+Then('The user validates there are 2 products in the cart', () => {
+    carritoPage.validateProductQuantity(2);
+})
+
+And('A user clicks the add to cart button', () => {
     productPage.clickAddToCartButton();
 })

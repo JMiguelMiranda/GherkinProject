@@ -5,11 +5,21 @@ class homePage{
         productDetails: () => cy.get('.product-details-container'),
         productPrice: () => cy.get('.main-price'),
         buyProductBtn: () => cy.get('#product-checkout-button'),
-        addCaddToCartButtonartBtn: () => cy.get('#product-addtocart-button'),
+        addCaddToCartButtonBtn: () => cy.get('#product-addtocart-button'),
         cardsTypesPayments: () => cy.get('.price > .row > :nth-child(2)'),    
         successAddCartLabel: () => cy.get('.message-success > div'), 
-        cartCounterLabel: () => cy.get('.counter-number')
+        cartCounterLabel: () => cy.get('.counter-number'),
+        addToCartButton: () => cy.get('#product-addtocart-button'),
+        priceLabel: () => cy.get('.title')
         
+    }
+
+    clickAddToCartButton() {
+        this.elements.addToCartButton().click();
+    }
+
+    validateCartCounterLabel(){
+        this.elements.cartCounterLabel().should('be.visible');
     }
 
     clickBuyProductBtn(){
@@ -17,7 +27,7 @@ class homePage{
     }
 
     clickAddToCartButton(){
-        this.elements.addCaddToCartButtonartBtn().click();
+        this.elements.addCaddToCartButtonBtn().click();
     }
 
     validateProductTitle(){
