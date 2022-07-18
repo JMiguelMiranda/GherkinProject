@@ -1,0 +1,78 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Checkout",
+    "line": 1,
+    "id": "checkout",
+    "tags": [],
+    "uri": "checkout.feature",
+    "elements": [
+      {
+        "id": "checkout;success-payment",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Success payment",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "a user adds AMZ product \"B000FZX93K\" to the cart",
+            "result": {
+              "status": "failed",
+              "duration": 44126000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.message-success > div`, but never found it.\n    at homePage.validateSuccessAddCartLabel (https://staging-automation-mgn2-a.tiendamia.net/__cypress/tests?p=cypress\\integration\\normal-script\\checkout.feature:519:43)\n    at Context.eval (https://staging-automation-mgn2-a.tiendamia.net/__cypress/tests?p=cypress\\integration\\normal-script\\checkout.feature:50:15)\n    at Context.resolveAndRunStepDefinition (https://staging-automation-mgn2-a.tiendamia.net/__cypress/tests?p=cypress\\integration\\normal-script\\checkout.feature:10985:29)\n    at Context.eval (https://staging-automation-mgn2-a.tiendamia.net/__cypress/tests?p=cypress\\integration\\normal-script\\checkout.feature:10306:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "the user tries to go to the checkout but makes the login first",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "now the user is redirected to checkout",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user fills the shipping adress data",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "clicks the buy button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the order was successfully made",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
