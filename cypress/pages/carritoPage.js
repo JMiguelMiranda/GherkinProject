@@ -28,7 +28,7 @@ class carritoPage{
     }
 
     validateProductQuantity(number){
-        this.elements.itemQuantityInput().invoke('attr', 'value').should('equal', number);
+        this.elements.itemQuantityInput().invoke('attr', 'value').should('contain', number);
     }
 
     clickDeleteProductButton(){
