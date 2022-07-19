@@ -1,6 +1,5 @@
 import {Given, When, And, Then} from "cypress-cucumber-preprocessor/steps";
 const loginPage = require('../../../pages/loginPage');
-const carritoPage = require('../../../pages/carritoPage');
 const productPage = require('../../../pages/productPage');
 const checkoutPage = require('../../../pages/checkoutPage');
 

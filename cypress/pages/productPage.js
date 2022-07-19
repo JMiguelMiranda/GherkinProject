@@ -1,4 +1,4 @@
-class homePage{
+class productPage{
     elements = {
         productTitle: () => cy.get('.title'),
         productRating: () => cy.get('.rating-container'),
@@ -63,4 +63,4 @@ class homePage{
     }
 }
 
-module.exports = new homePage();
+module.exports = new productPage();
