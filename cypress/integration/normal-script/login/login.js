@@ -9,31 +9,31 @@ Given('A user opens the register page', () => {
     cy.visit('customer/account/create/?');
 })
 
-When('A user enters the name: {string}', (name) => {
+Given('A user enters the name: {string}', (name) => {
     loginPage.typeName(name);
 })
 
-When('A user enters the lastname: {string}', (lastname) => {
+Given('A user enters the lastname: {string}', (lastname) => {
     loginPage.typeLastName(lastname)
 })
 
-When('A user enters the dynamic register email', () => {
+Given('A user enters the dynamic register email', () => {
     loginPage.typeRegisterEmail();
 })
 
-When('A user enters the register password: {string}', (password) => {
+Given('A user enters the register password: {string}', (password) => {
     loginPage.typeRegisterPassword(password);
 })
 
-When('A user enters the register password confirmation: {string}', (password) => {
+Given('A user enters the register password confirmation: {string}', (password) => {
     loginPage.typeRegisterPasswordConfirmation(password);
 })
 
-When('A user enters the login email: {string}', (email) => {
+Given('A user enters the login email: {string}', (email) => {
     loginPage.typeLoginEmail(email);
 })
 
-When('A user enters the login password: {string}', (password) => {
+Given('A user enters the login password: {string}', (password) => {
     loginPage.typeLoginPassword(password);
 })
 
