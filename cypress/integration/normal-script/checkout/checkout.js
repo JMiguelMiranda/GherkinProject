@@ -9,7 +9,7 @@ Given('a user adds AMZ product {string} to the cart', (sku) => {
     productPage.validateSuccessAddCartLabel();
 })
 
-And('the user tries to go to the checkout but makes the login first', () => {
+Given('the user tries to go to the checkout but makes the login first', () => {
     cy.visit('/checkout/#shipping');
     loginPage.typeLoginEmail('test@yopmail.com');
     loginPage.typeLoginPassword('Aa123123');
@@ -20,13 +20,13 @@ And('the user tries to go to the checkout but makes the login first', () => {
     loginPage.validateCustomerName();
 })
 
-And('now the user is redirected to checkout', () => {
+Given('now the user is redirected to checkout', () => {
     cy.visit('/checkout/#shipping');
     checkoutPage.validateCheckoutTitle();
     checkoutPage.savedAdressVerification();
 })
 
-When('the user fills the shipping adress data', () => {
+Given('the user fills the shipping adress data', () => {
     checkoutPage.typeIdentificationNumber();
     checkoutPage.typeAdress();
     checkoutPage.selectProvince();
@@ -38,7 +38,7 @@ When('the user fills the shipping adress data', () => {
     checkoutPage.clickContinueToPaymentButton();
 })
 
-And('clicks the buy button', () => {
+When('clicks the buy button', () => {
     checkoutPage.clickMakePaymentButton();
 })
 
