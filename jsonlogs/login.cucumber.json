@@ -22,7 +22,7 @@
             "name": "A user opens the login page",
             "result": {
               "status": "passed",
-              "duration": 5270000000
+              "duration": 4885000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "A user enters the login email: \"test@yopmail.com\"",
             "result": {
               "status": "passed",
-              "duration": 443000000
+              "duration": 390000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "A user enters the login password: \"Aa123123\"",
             "result": {
               "status": "passed",
-              "duration": 296000000
+              "duration": 257000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "A user clicks the login button",
             "result": {
               "status": "passed",
-              "duration": 5356000000
+              "duration": 4354000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "The user will be logged in",
             "result": {
               "status": "passed",
-              "duration": 39000000
+              "duration": 1655000000
             }
           }
         ]
@@ -82,7 +82,7 @@
             "name": "A user opens the login page",
             "result": {
               "status": "passed",
-              "duration": 3300000000
+              "duration": 2873000000
             }
           },
           {
@@ -92,7 +92,7 @@
             "name": "A user enters the login email: \"test@yopmail.com\"",
             "result": {
               "status": "passed",
-              "duration": 469000000
+              "duration": 367000000
             }
           },
           {
@@ -102,7 +102,7 @@
             "name": "A user enters the login password: \"12312312\"",
             "result": {
               "status": "passed",
-              "duration": 273000000
+              "duration": 267000000
             }
           },
           {
@@ -112,7 +112,7 @@
             "name": "A user clicks the login button",
             "result": {
               "status": "passed",
-              "duration": 3168000000
+              "duration": 2999000000
             }
           },
           {
@@ -122,7 +122,7 @@
             "name": "The user will receive the error message: \"El email y contraseña son incorrectas o tu cuenta está temporalmente deshabilitada. Intente nuevamente mas tarde.\"",
             "result": {
               "status": "passed",
-              "duration": 699000000
+              "duration": 22000000
             }
           }
         ]
@@ -142,7 +142,7 @@
             "name": "A user opens the register page",
             "result": {
               "status": "passed",
-              "duration": 1864000000
+              "duration": 840000000
             }
           },
           {
@@ -152,7 +152,7 @@
             "name": "A user enters the name: \"test\"",
             "result": {
               "status": "passed",
-              "duration": 1016000000
+              "duration": 206000000
             }
           },
           {
@@ -162,7 +162,7 @@
             "name": "A user enters the lastname: \"test\"",
             "result": {
               "status": "passed",
-              "duration": 236000000
+              "duration": 232000000
             }
           },
           {
@@ -172,7 +172,7 @@
             "name": "A user enters the dynamic register email",
             "result": {
               "status": "passed",
-              "duration": 665000000
+              "duration": 671000000
             }
           },
           {
@@ -182,7 +182,7 @@
             "name": "A user enters the register password: \"Aa123123\"",
             "result": {
               "status": "passed",
-              "duration": 315000000
+              "duration": 268000000
             }
           },
           {
@@ -192,7 +192,7 @@
             "name": "A user enters the register password confirmation: \"Aa123123\"",
             "result": {
               "status": "passed",
-              "duration": 296000000
+              "duration": 261000000
             }
           },
           {
@@ -202,7 +202,7 @@
             "name": "The user clicks the register button",
             "result": {
               "status": "passed",
-              "duration": 3481000000
+              "duration": 2791000000
             }
           },
           {
@@ -212,7 +212,7 @@
             "name": "The user will be logged in",
             "result": {
               "status": "passed",
-              "duration": 20000000
+              "duration": 2870000000
             }
           }
         ]

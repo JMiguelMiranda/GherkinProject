@@ -14,6 +14,8 @@ And('the user tries to go to the checkout but makes the login first', () => {
     loginPage.typeLoginEmail('test@yopmail.com');
     loginPage.typeLoginPassword('Aa123123');
     loginPage.clickLoginButton();
+    loginPage.clickMenuButton();
+    loginPage.clickProfileButton();
     cy.url().should('include', '/customer/account');
     loginPage.validateCustomerName();
 })

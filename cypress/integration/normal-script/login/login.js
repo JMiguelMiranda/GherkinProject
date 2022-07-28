@@ -46,6 +46,8 @@ When('The user clicks the register button', () => {
 })
 
 Then('The user will be logged in', () => {
+    loginPage.clickMenuButton();
+    loginPage.clickProfileButton();
     cy.url().should('include', '/customer/account');
     loginPage.validateCustomerName();
 })

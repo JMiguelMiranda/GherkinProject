@@ -11,7 +11,9 @@ class loginPage{
         registerButton: () => cy.get('#form-validate > .actions-toolbar > div.primary > .primary'),
         loginWithGoogleButton: () => cy.get('.login-container > .sociallogin-wrapper > .block > .sociallogin-padding > .sociallogin-box > .sociallogin-button'),
         customerNameLabel: () => cy.get('.dropdown-button > span'),
-        errorMessageLabel: () => cy.get('.message-error')
+        errorMessageLabel: () => cy.get('.message-error'),
+        menuBtn: () => cy.get('.dropdown-button'),
+        profileBtn: () => cy.get('[href="https://preprod.tiendamia.com.do/customer/account/"]')
     }
 
     typeName(name){
@@ -62,6 +64,13 @@ class loginPage{
     validateCustomerName(){
         this.elements.customerNameLabel().should('contain', 'test test')
     }
+    clickMenuButton(){
+        this.elements.menuBtn().click();
+    }
+    clickProfileButton(){
+        this.elements.profileBtn().click();
+    }
+
 }
 
 module.exports = new loginPage();

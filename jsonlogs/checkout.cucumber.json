@@ -21,9 +21,8 @@
             "line": 4,
             "name": "a user adds AMZ product \"B000FZX93K\" to the cart",
             "result": {
-              "status": "failed",
-              "duration": 44126000000,
-              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `.message-success > div`, but never found it.\n    at homePage.validateSuccessAddCartLabel (https://staging-automation-mgn2-a.tiendamia.net/__cypress/tests?p=cypress\\integration\\normal-script\\checkout.feature:519:43)\n    at Context.eval (https://staging-automation-mgn2-a.tiendamia.net/__cypress/tests?p=cypress\\integration\\normal-script\\checkout.feature:50:15)\n    at Context.resolveAndRunStepDefinition (https://staging-automation-mgn2-a.tiendamia.net/__cypress/tests?p=cypress\\integration\\normal-script\\checkout.feature:10985:29)\n    at Context.eval (https://staging-automation-mgn2-a.tiendamia.net/__cypress/tests?p=cypress\\integration\\normal-script\\checkout.feature:10306:35)"
+              "status": "passed",
+              "duration": 8024000000
             }
           },
           {
@@ -32,7 +31,8 @@
             "line": 5,
             "name": "the user tries to go to the checkout but makes the login first",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 8611000000
             }
           },
           {
@@ -41,7 +41,8 @@
             "line": 6,
             "name": "now the user is redirected to checkout",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 25846000000
             }
           },
           {
@@ -50,7 +51,8 @@
             "line": 7,
             "name": "the user fills the shipping adress data",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3537000000
             }
           },
           {
@@ -59,7 +61,9 @@
             "line": 8,
             "name": "clicks the buy button",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "duration": 35014000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `//*[@id=\"buttons-container\"]/div/div[2]/div/div[1]`, but never found it.\n    at Object.makePaymentButton2 (https://preprod.tiendamia.com.do/__cypress/tests?p=cypress\\integration\\normal-script\\checkout.feature:135:19)\n    at checkoutPage.clickMakePaymentButton (https://preprod.tiendamia.com.do/__cypress/tests?p=cypress\\integration\\normal-script\\checkout.feature:175:21)\n    at Context.eval (https://preprod.tiendamia.com.do/__cypress/tests?p=cypress\\integration\\normal-script\\checkout.feature:77:16)\n    at Context.resolveAndRunStepDefinition (https://preprod.tiendamia.com.do/__cypress/tests?p=cypress\\integration\\normal-script\\checkout.feature:10922:29)\n    at Context.eval (https://preprod.tiendamia.com.do/__cypress/tests?p=cypress\\integration\\normal-script\\checkout.feature:10243:35)"
             }
           },
           {
