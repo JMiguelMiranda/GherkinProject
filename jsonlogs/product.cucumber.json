@@ -17,62 +17,102 @@
         "steps": [
           {
             "arguments": [],
-            "keyword": "Given ",
+            "keyword": "When ",
             "line": 4,
             "name": "A user opens an Amazon product",
             "result": {
               "status": "passed",
-              "duration": 8073000000
+              "duration": 12406000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 5,
-            "name": "A user validates product information",
+            "name": "A user validates payment types",
             "result": {
               "status": "passed",
-              "duration": 87000000
+              "duration": 26000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 6,
-            "name": "A user clicks the add to cart button",
+            "name": "A user validates product details",
             "result": {
               "status": "passed",
-              "duration": 1409000000
+              "duration": 19000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "A user clicks the buy button",
+            "name": "A user validates product price",
             "result": {
               "status": "passed",
-              "duration": 90000000
+              "duration": 18000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 8,
-            "name": "The user will be on the cart page",
+            "name": "A user validates product rating",
             "result": {
               "status": "passed",
-              "duration": 3805000000
+              "duration": 17000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 9,
+            "name": "A user validates product title",
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "A user clicks the add to cart button",
+            "result": {
+              "status": "passed",
+              "duration": 1672000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "A user clicks the buy button",
+            "result": {
+              "status": "passed",
+              "duration": 111000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "The user will be on the cart page",
+            "result": {
+              "status": "passed",
+              "duration": 4685000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
             "name": "The user validates there are 2 products in the cart",
             "result": {
               "status": "passed",
-              "duration": 27000000
+              "duration": 1061000000
             }
           }
         ]
@@ -80,99 +120,69 @@
       {
         "id": "product;validate-ebay-product",
         "keyword": "Scenario",
-        "line": 11,
+        "line": 15,
         "name": "Validate eBay product",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
-            "keyword": "Given ",
-            "line": 12,
+            "keyword": "When ",
+            "line": 16,
             "name": "A user opens an eBay product",
             "result": {
               "status": "passed",
-              "duration": 10583000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "A user validates product information",
-            "result": {
-              "status": "passed",
-              "duration": 104000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "A user clicks the add to cart button",
-            "result": {
-              "status": "passed",
-              "duration": 1884000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 15,
-            "name": "A user clicks the buy button",
-            "result": {
-              "status": "passed",
-              "duration": 87000000
+              "duration": 13869000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 16,
-            "name": "The user will be on the cart page",
+            "line": 17,
+            "name": "A user validates payment types",
             "result": {
               "status": "passed",
-              "duration": 5083000000
+              "duration": 13000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 17,
-            "name": "The user validates there are 2 products in the cart",
+            "line": 18,
+            "name": "A user validates product details",
             "result": {
               "status": "passed",
-              "duration": 29000000
+              "duration": 31000000
             }
-          }
-        ]
-      },
-      {
-        "id": "product;validate-walmart-product",
-        "keyword": "Scenario",
-        "line": 19,
-        "name": "Validate Walmart product",
-        "tags": [],
-        "type": "scenario",
-        "steps": [
+          },
           {
             "arguments": [],
-            "keyword": "Given ",
-            "line": 20,
-            "name": "A user opens an Walmart product",
+            "keyword": "And ",
+            "line": 19,
+            "name": "A user validates product price",
             "result": {
               "status": "passed",
-              "duration": 11252000000
+              "duration": 22000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "A user validates product rating",
+            "result": {
+              "status": "passed",
+              "duration": 20000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 21,
-            "name": "A user validates product information",
+            "name": "A user validates product title",
             "result": {
               "status": "passed",
-              "duration": 80000000
+              "duration": 23000000
             }
           },
           {
@@ -182,7 +192,7 @@
             "name": "A user clicks the add to cart button",
             "result": {
               "status": "passed",
-              "duration": 1390000000
+              "duration": 1524000000
             }
           },
           {
@@ -192,17 +202,17 @@
             "name": "A user clicks the buy button",
             "result": {
               "status": "passed",
-              "duration": 122000000
+              "duration": 146000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 24,
             "name": "The user will be on the cart page",
             "result": {
               "status": "passed",
-              "duration": 3177000000
+              "duration": 5458000000
             }
           },
           {
@@ -212,7 +222,117 @@
             "name": "The user validates there are 2 products in the cart",
             "result": {
               "status": "passed",
-              "duration": 29000000
+              "duration": 1022000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "product;validate-walmart-product",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Validate Walmart product",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "A user opens an Walmart product",
+            "result": {
+              "status": "passed",
+              "duration": 12675000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "A user validates payment types",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "A user validates product details",
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "A user validates product price",
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "A user validates product rating",
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "A user validates product title",
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "A user clicks the add to cart button",
+            "result": {
+              "status": "passed",
+              "duration": 1510000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "A user clicks the buy button",
+            "result": {
+              "status": "passed",
+              "duration": 87000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "The user will be on the cart page",
+            "result": {
+              "status": "passed",
+              "duration": 7291000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "The user validates there are 2 products in the cart",
+            "result": {
+              "status": "passed",
+              "duration": 1021000000
             }
           }
         ]
@@ -220,69 +340,109 @@
       {
         "id": "product;validate-macy's-product",
         "keyword": "Scenario",
-        "line": 27,
+        "line": 39,
         "name": "Validate Macy's product",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
-            "keyword": "Given ",
-            "line": 28,
+            "keyword": "When ",
+            "line": 40,
             "name": "A user opens an Macy's product",
             "result": {
               "status": "passed",
-              "duration": 11191000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 29,
-            "name": "A user validates product information",
-            "result": {
-              "status": "passed",
-              "duration": 101000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 30,
-            "name": "A user clicks the add to cart button",
-            "result": {
-              "status": "passed",
-              "duration": 1331000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 31,
-            "name": "A user clicks the buy button",
-            "result": {
-              "status": "passed",
-              "duration": 110000000
+              "duration": 9609000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 32,
-            "name": "The user will be on the cart page",
+            "line": 41,
+            "name": "A user validates payment types",
             "result": {
               "status": "passed",
-              "duration": 1998000000
+              "duration": 43000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 33,
+            "line": 42,
+            "name": "A user validates product details",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "A user validates product price",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "A user validates product rating",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "A user validates product title",
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "A user clicks the add to cart button",
+            "result": {
+              "status": "passed",
+              "duration": 1358000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "A user clicks the buy button",
+            "result": {
+              "status": "passed",
+              "duration": 92000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "The user will be on the cart page",
+            "result": {
+              "status": "passed",
+              "duration": 5485000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 49,
             "name": "The user validates there are 2 products in the cart",
             "result": {
               "status": "passed",
-              "duration": 34000000
+              "duration": 1022000000
             }
           }
         ]
