@@ -9,7 +9,10 @@ Given('a user does the login and verifies it has an empty cart', () => {
     loginPage.typeUsername('test@yopmail.com');
     loginPage.typePassword('Aa123123');
     loginPage.clickLoginButton();
+<<<<<<< Updated upstream
     cy.url().should('include', '/customer/account');
+=======
+>>>>>>> Stashed changes
     loginPage.validateCustomerName();
 
     carritoPage.clickCartButton();
@@ -39,7 +42,15 @@ When('the user fills the shipping adress data', () => {
     checkoutPage.clickContinueToPaymentButton();
 })
 
+<<<<<<< Updated upstream
 And('clicks the buy button', () => {
+=======
+Given('the user makes a credit card payment', () => {
+    checkoutPage.fillCreditCardInfo();
+})
+
+When('clicks the buy button', () => {
+>>>>>>> Stashed changes
     checkoutPage.clickMakePaymentButton();
 })
 

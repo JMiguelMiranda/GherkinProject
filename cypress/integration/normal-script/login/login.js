@@ -18,7 +18,10 @@ And('A user clicks the login button', () => {
 })
 
 Then('The user will be logged in', () => {
+<<<<<<< Updated upstream
     cy.url().should('include', '/customer/account');
+=======
+>>>>>>> Stashed changes
     loginPage.validateCustomerName();
 })
 

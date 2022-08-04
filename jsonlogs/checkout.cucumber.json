@@ -1,0 +1,82 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Checkout",
+    "line": 1,
+    "id": "checkout",
+    "tags": [],
+    "uri": "checkout.feature",
+    "elements": [
+      {
+        "id": "checkout;success-payment",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Success payment",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "a user adds AMZ product \"B000FZX93K\" to the cart",
+            "result": {
+              "status": "passed",
+              "duration": 21224000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "the user tries to go to the checkout but makes the login first",
+            "result": {
+              "status": "passed",
+              "duration": 12937000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "now the user is redirected to checkout",
+            "result": {
+              "status": "passed",
+              "duration": 24143000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user fills the shipping adress data",
+            "result": {
+              "status": "passed",
+              "duration": 3113000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the user makes a credit card payment",
+            "result": {
+              "status": "failed",
+              "duration": 42261000000,
+              "error_message": "AssertionError: Timed out retrying after 30000ms: Expected to find element: `[title=\"paypal_card_form\"]`, but never found it. Queried from element: <body.dom-ready>\n    at Context.eval (https://preprod.tiendamia.com.do/__cypress/tests?p=cypress\\integration\\normal-script\\checkout.feature:150:64)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the order was successfully made",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

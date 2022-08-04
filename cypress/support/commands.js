@@ -23,3 +23,17 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('iframeType', (iframeLocator, elementLocator, string) => {
+    cy.wrap(iframeLocator)
+        .its('0.contentDocument.body')
+        .find(elementLocator)
+        .type(string, {force:true});
+})
+
+Cypress.Commands.add('iframeClick', (iframeLocator, elementLocator) => {
+    cy.wrap(iframeLocator)
+        .its('0.contentDocument.body')
+        .find(elementLocator)
+        .click({force:true, multiple:true});
+})
