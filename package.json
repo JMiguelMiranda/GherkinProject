@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress open",
-    "cypress:execution": "cypress run"
+    "cypress:execution": "cypress run --reporter mochawesome",
+    "clean:reports": "rmdir /S /Q cypress\\reports\\html",
+    "pretest": "npm run clean:reports",
+    "scripts": "cypress run",
+    "test2": "npm run scripts"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +23,7 @@
     "@types/bluebird": "^2.0.34",
     "@types/lodash": "^4.14.182",
     "cypress": "^10.3.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-xpath": "^2.0.1",
     "esbuild": "^0.14.49",
     "mysql2": "^2.3.3",
@@ -27,7 +32,7 @@
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
     "cucumberJson": {
-      "generate": true,
+      "generate": false,
       "outputFolder": "jsonlogs",
       "filePrefix": "",
       "fileSuffix": ".cucumber"
