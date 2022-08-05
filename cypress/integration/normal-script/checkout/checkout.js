@@ -25,6 +25,10 @@ And('the user goes to the checkout', () => {
     checkoutPage.savedAdressVerification();
 })
 
+When('the user makes a credit card payment', () => {
+    checkoutPage.fillCreditCardInfo();
+})
+
 When('the user fills the shipping adress data', () => {
     checkoutPage.typeIdentificationNumber();
     checkoutPage.typeAdress();
@@ -37,15 +41,7 @@ When('the user fills the shipping adress data', () => {
     checkoutPage.clickContinueToPaymentButton();
 })
 
-<<<<<<< Updated upstream
-And('clicks the buy button', () => {
-=======
-Given('the user makes a credit card payment', () => {
-    checkoutPage.fillCreditCardInfo();
-})
-
 When('clicks the buy button', () => {
->>>>>>> Stashed changes
     checkoutPage.clickMakePaymentButton();
 })
 
