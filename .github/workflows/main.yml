@@ -12,9 +12,9 @@ jobs:
       with:
            start: npm run test2
     
-    - name: slack-send
+    - name: Github Action Slack Notifications via Curl
       id: slack
-      uses: slackapi/slack-github-action@v1.21.0
+      uses: endcrawl/github-action-slack-notify-curl@v0.4
       env:
             SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
