@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress open",
-    "cypress:execution": "cypress run --reporter mochawesome",
-    "clean:reports": "rmdir /S /Q cypress\\reports\\html",
-    "pretest": "npm run clean:reports",
-    "scripts": "cypress run",
-    "test2": "npm run scripts"
+    "cypress:execution": "cypress run || node .\\cucumber-html-report.js",
+    "scripts": "npm run cypress:execution",
+    "test2": "npm run pretest && npm run scripts",
+    "clean:reports": "rmdir /S /Q jsonlogs",
+    "pretest": "npm run clean:reports"
   },
   "author": "",
   "license": "ISC",
@@ -32,7 +32,7 @@
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
     "cucumberJson": {
-      "generate": false,
+      "generate": true,
       "outputFolder": "jsonlogs",
       "filePrefix": "",
       "fileSuffix": ".cucumber"

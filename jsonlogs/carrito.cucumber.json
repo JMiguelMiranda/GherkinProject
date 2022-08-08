@@ -1,17 +1,17 @@
 [
   {
     "keyword": "Feature",
-    "name": "Login",
+    "name": "Cart",
     "line": 1,
-    "id": "login",
+    "id": "cart",
     "tags": [],
-    "uri": "login.feature",
+    "uri": "carrito.feature",
     "elements": [
       {
-        "id": "login;success-login",
+        "id": "cart;cart---change-product-amount",
         "keyword": "Scenario",
         "line": 3,
-        "name": "Success Login",
+        "name": "Cart - Change product amount",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -19,119 +19,119 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
-            "name": "A user opens the login page",
+            "name": "a user adds AMZ product \"B000FZX93K\" to the cart",
             "result": {
               "status": "passed",
-              "duration": 4257000000
+              "duration": 11919000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 5,
-            "name": "A user enters the login email: \"test@yopmail.com\"",
+            "name": "is in the cart page",
             "result": {
               "status": "passed",
-              "duration": 393000000
+              "duration": 7462000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 6,
-            "name": "A user enters the login password: \"Aa123123\"",
+            "name": "changes the quantity value",
             "result": {
               "status": "passed",
-              "duration": 266000000
+              "duration": 378000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 7,
-            "name": "A user clicks the login button",
+            "name": "clicks the 'Actualizar carrito' button",
             "result": {
               "status": "passed",
-              "duration": 4826000000
+              "duration": 137000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 8,
-            "name": "The user will be logged in",
+            "name": "the quantity field should be different",
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 7957000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the product price should be equivalent to the quantity of products",
+            "result": {
+              "status": "passed",
+              "duration": 334000000
             }
           }
         ]
       },
       {
-        "id": "login;failed-login---incorrect-passowrd",
+        "id": "cart;cart---delete-product-button",
         "keyword": "Scenario",
-        "line": 10,
-        "name": "Failed Login - Incorrect passowrd",
+        "line": 11,
+        "name": "Cart - Delete product button",
         "tags": [],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 11,
-            "name": "A user opens the login page",
-            "result": {
-              "status": "passed",
-              "duration": 1197000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
             "line": 12,
-            "name": "A user enters the login email: \"test@yopmail.com\"",
+            "name": "a user adds AMZ product \"B000FZX93K\" to the cart",
             "result": {
               "status": "passed",
-              "duration": 454000000
+              "duration": 8048000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 13,
-            "name": "A user enters the login password: \"12312312\"",
+            "name": "is in the cart page",
             "result": {
               "status": "passed",
-              "duration": 274000000
+              "duration": 1204000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 14,
-            "name": "A user clicks the login button",
+            "name": "clicks the 'Eliminar' button",
             "result": {
               "status": "passed",
-              "duration": 4352000000
+              "duration": 2465000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 15,
-            "name": "The user will receive the error message: \"El email y contraseña son incorrectas o tu cuenta está temporalmente deshabilitada. Intente nuevamente mas tarde.\"",
+            "name": "the cart should be empty",
             "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 1626000000
             }
           }
         ]
       },
       {
-        "id": "login;success-register",
+        "id": "cart;cart---apply-coupon",
         "keyword": "Scenario",
         "line": 17,
-        "name": "Success Register",
+        "name": "Cart - Apply coupon",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -139,80 +139,60 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 18,
-            "name": "A user opens the register page",
+            "name": "a user adds AMZ product \"B000FZX93K\" to the cart",
             "result": {
               "status": "passed",
-              "duration": 3346000000
+              "duration": 6200000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 19,
-            "name": "A user enters the name: \"test\"",
+            "name": "is in the cart page",
             "result": {
               "status": "passed",
-              "duration": 216000000
+              "duration": 1030000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 20,
-            "name": "A user enters the lastname: \"test\"",
+            "name": "enters coupon code \"TESTSCOUPON\"",
             "result": {
               "status": "passed",
-              "duration": 214000000
+              "duration": 512000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "When ",
             "line": 21,
-            "name": "A user enters the dynamic register email",
+            "name": "clicks the 'Aplicar' button",
             "result": {
               "status": "passed",
-              "duration": 680000000
+              "duration": 4021000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
+            "keyword": "Then ",
             "line": 22,
-            "name": "A user enters the register password: \"Aa123123\"",
+            "name": "coupon applied successfully message exist",
             "result": {
               "status": "passed",
-              "duration": 291000000
+              "duration": 1547000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 23,
-            "name": "A user enters the register password confirmation: \"Aa123123\"",
+            "name": "discount has been properly applied",
             "result": {
               "status": "passed",
-              "duration": 297000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 24,
-            "name": "The user clicks the register button",
-            "result": {
-              "status": "passed",
-              "duration": 2962000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 25,
-            "name": "The user will be logged in",
-            "result": {
-              "status": "passed",
-              "duration": 13000000
+              "duration": 1587000000
             }
           }
         ]

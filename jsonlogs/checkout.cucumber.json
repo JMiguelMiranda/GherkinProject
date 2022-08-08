@@ -1,0 +1,77 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Checkout",
+    "line": 1,
+    "id": "checkout",
+    "tags": [],
+    "uri": "checkout.feature",
+    "elements": [
+      {
+        "id": "checkout;success-payment",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Success payment",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "a user adds AMZ product \"B000FZX93K\" to the cart",
+            "result": {
+              "status": "undefined",
+              "duration": 360000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "the user tries to go to the checkout but makes the login first",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "now the user is redirected to checkout",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the user fills the shipping adress data",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the user makes a credit card payment",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the order was successfully made",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
