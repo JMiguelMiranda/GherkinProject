@@ -16,7 +16,7 @@ jobs:
       with:
            start: npm run test2
            
-           slack-message: "GitHub build result: ${{ job.status }}
+           slack-message: "GitHub build result: ${{ job.status }}"
 
       env:
             SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
