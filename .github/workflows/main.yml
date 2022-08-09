@@ -1,11 +1,9 @@
 name: Cypress Test
 
-on:
-  push:
-    branches: [ master, release/* ]
+on: [push]
 
 jobs:
-  build:
+  cypress-run:
     runs-on: ubuntu-latest
     env:
       IMAGE_NAME: ${{ github.repository }}/alerta-cli
