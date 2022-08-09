@@ -9,11 +9,15 @@ jobs:
       
     - name: slack-send
       uses: slackapi/slack-github-action@v1.21.0
+      
+    - name: Cypress.io 
+      uses: cypress-io/github-action@v4.2.0
+      
       with:
-        payload:  |
-          {
-          "text":"test"
-          }
+           start: npm run test2
+           
+           slack-message: "GitHub build result: ${{ job.status }}
+
       env:
             SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
            
