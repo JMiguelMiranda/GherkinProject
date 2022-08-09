@@ -7,14 +7,14 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2.4.2
       
-    - name: Github Action Slack Notifications via Curl
-      id: slack
-      uses: endcrawl/github-action-slack-notify-curl@v0.4
+    - name: slack-send
+      uses: slackapi/slack-github-action@v1.21.0
+      with:
+          slack_webhook: ${{ secrets.SLACK_WEBHOOK_URL }}
       env:
             SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
             SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-      with:
-           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+           
             
 
       
