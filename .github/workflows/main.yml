@@ -1,35 +1,31 @@
 name: Cypress Test
+
 on: [push]
+
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2.4.2
-   
-    - name: Install OpenVPN
-      run: |
-          sudo apt update
-          sudo apt install -y openvpn openvpn-systemd-resolved
+      - uses: act10ns/slack@v1
+        with:
+          status: starting
+          message: Starting Cypress Test...
+        if: always()
+        
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+      - name: Cypress.io 
+        uses: cypress-io/github-action@v4.2.0
       
-    - name: OpenVPN-Connect
-      uses: kota65535/github-openvpn-connect-action@v1.0.2
-      with:
-          config_file: ./github/workflows/client.ovpn
-          username: ${{ secrets.OVPN_USERNAME }}
-          password: ${{ secrets.OVPN_PASSWORD }}
-          
-          run: ./gradlew clean build
-   
-    - name: Cypress.io 
-      uses: cypress-io/github-action@v4.2.0
-      with:
+        with:
            start: npm run test2
-    
-    - name: slack-send
-      id: slack
-      uses: slackapi/slack-github-action@v1.21.0
-      with:
-            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
-
+      - uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+          steps: ${{ toJson(steps) }}
+        if: always()
+      
