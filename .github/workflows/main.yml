@@ -11,8 +11,8 @@ jobs:
       id: slack
       uses: endcrawl/github-action-slack-notify-curl@v0.4
       env:
-            SLACK_WEBHOOK_URL: ${{ env.SLACK_WEBHOOK_URL }}
-            SLACK_WEBHOOK: ${{ env.SLACK_WEBHOOK }}
+            SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+            SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
             
 
       
