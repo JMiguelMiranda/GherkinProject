@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress open",
-    "cypress:execution": "cypress run"
+    "cypress:execution": "cypress run || node .\\cucumber-html-report.js",
+    "scripts": "npm run cypress:execution",
+    "test2": "npm run pretest && npm run scripts",
+    "clean:reports": "rm -r jsonlogs",
+    "pretest": "npm run clean:reports"
   },
   "author": "",
   "license": "ISC",
