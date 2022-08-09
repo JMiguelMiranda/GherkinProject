@@ -9,13 +9,15 @@ jobs:
     
     - name: Cypress.io 
       uses: cypress-io/github-action@v4.2.0
-            
-    - name: slack-send
-      uses: slackapi/slack-github-action@v1.21.0
       
       with:
            start: npm run test2
-           
+            
+    - name: slack-send
+      if: always()
+      uses: slackapi/slack-github-action@v1.21.0
+      
+      with:
            slack-message: "GitHub build result: ${{ job.status }}"
 
       env:
