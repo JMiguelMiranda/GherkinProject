@@ -38,7 +38,7 @@ module.exports = defineConfig({
       };
       on('file:preprocessor', cucumber(options));
     },
-    baseUrl: 'https://preprod.tiendamia.com.do/',
+    baseUrl: 'https://staging-automation-mgn2-a.tiendamia.net/',
     chromeWebSecurity: false,
     specPattern: 'cypress/integration/normal-script/*.{js,jsx,ts,tsx,feature}',
     viewportWidth: 1920,

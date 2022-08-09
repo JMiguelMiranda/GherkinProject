@@ -13,10 +13,12 @@ class checkoutPage{
         continueToPaymentButton: () => cy.get('div.primary > .button-text_contained'),
         makePaymentButton: () => cy.get(':nth-child(4) > div.primary > .action'),
         successPaymentLabel: () => cy.get('.font-700'),
-        debitCardPaymentButton: () => cy.get('[aria-label="Debit or Credit Card"]')
+        debitCardPaymentButton: () => cy.get('[aria-label="Debit or Credit Card"]'),
+        paypalPaymentButton: () => cy.get('#paypal_express')
     }
     
     fillCreditCardInfo() {
+        this.elements.paypalPaymentButton().click();
         cy.wait(7000);
         cy.get('[id^="jsx-iframe-"]').then(iframeContainer => {
             cy.wrap(iframeContainer)
