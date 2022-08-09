@@ -18,7 +18,10 @@ jobs:
       uses: slackapi/slack-github-action@v1.21.0
       
       with:
-           slack-message: "GitHub build result: ${{ job.status }}"
+          payload: |
+                 {
+                    "text": "GitHub Action build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}",
+                 }
 
       env:
             SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
