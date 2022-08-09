@@ -13,6 +13,8 @@ jobs:
       env:
             SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
             SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+      with:
+           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
             
 
       
