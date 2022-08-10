@@ -22,7 +22,7 @@ module.exports = defineConfig({
     execTimeout: 60000,
     pageLoadTimeout: 600000,
     env: {
-        host: "staging-automation-mgn2-a.tiendamia.net",
+        host: "https://preprod.tiendamia.com.do",
         user: "tiendamia",
         password: "Fufesos+76",
         database: "tiendamia",
@@ -38,7 +38,7 @@ module.exports = defineConfig({
       };
       on('file:preprocessor', cucumber(options));
     },
-    baseUrl: 'https://staging-automation-mgn2-a.tiendamia.net/',
+    baseUrl: 'https://preprod.tiendamia.com.do/',
     chromeWebSecurity: false,
     specPattern: 'cypress/integration/normal-script/*.{js,jsx,ts,tsx,feature}',
     viewportWidth: 1920,
