@@ -22,7 +22,7 @@
             "name": "A user opens an Amazon product",
             "result": {
               "status": "passed",
-              "duration": 10069000000
+              "duration": 11637000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "A user validates payment types",
             "result": {
               "status": "passed",
-              "duration": 31000000
+              "duration": 65000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "A user validates product details",
             "result": {
               "status": "passed",
-              "duration": 18000000
+              "duration": 24000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "A user validates product price",
             "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 25000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "A user validates product rating",
             "result": {
               "status": "passed",
-              "duration": 18000000
+              "duration": 26000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "A user validates product title",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 24000000
             }
           },
           {
@@ -82,7 +82,7 @@
             "name": "A user clicks the add to cart button",
             "result": {
               "status": "passed",
-              "duration": 1621000000
+              "duration": 2553000000
             }
           },
           {
@@ -92,7 +92,7 @@
             "name": "A user clicks the buy button",
             "result": {
               "status": "passed",
-              "duration": 84000000
+              "duration": 89000000
             }
           },
           {
@@ -102,7 +102,7 @@
             "name": "The user will be on the cart page",
             "result": {
               "status": "passed",
-              "duration": 6229000000
+              "duration": 6617000000
             }
           },
           {
@@ -112,7 +112,7 @@
             "name": "The user validates there are 2 products in the cart",
             "result": {
               "status": "passed",
-              "duration": 1024000000
+              "duration": 1062000000
             }
           }
         ]
@@ -132,7 +132,7 @@
             "name": "A user opens an eBay product",
             "result": {
               "status": "passed",
-              "duration": 11716000000
+              "duration": 10918000000
             }
           },
           {
@@ -142,7 +142,7 @@
             "name": "A user validates payment types",
             "result": {
               "status": "passed",
-              "duration": 30000000
+              "duration": 24000000
             }
           },
           {
@@ -152,7 +152,7 @@
             "name": "A user validates product details",
             "result": {
               "status": "passed",
-              "duration": 30000000
+              "duration": 24000000
             }
           },
           {
@@ -182,7 +182,7 @@
             "name": "A user validates product title",
             "result": {
               "status": "passed",
-              "duration": 21000000
+              "duration": 16000000
             }
           },
           {
@@ -192,7 +192,7 @@
             "name": "A user clicks the add to cart button",
             "result": {
               "status": "passed",
-              "duration": 1409000000
+              "duration": 1493000000
             }
           },
           {
@@ -202,7 +202,7 @@
             "name": "A user clicks the buy button",
             "result": {
               "status": "passed",
-              "duration": 83000000
+              "duration": 106000000
             }
           },
           {
@@ -212,7 +212,7 @@
             "name": "The user will be on the cart page",
             "result": {
               "status": "passed",
-              "duration": 4611000000
+              "duration": 2036000000
             }
           },
           {
@@ -222,7 +222,7 @@
             "name": "The user validates there are 2 products in the cart",
             "result": {
               "status": "passed",
-              "duration": 1023000000
+              "duration": 1075000000
             }
           }
         ]
@@ -242,7 +242,7 @@
             "name": "A user opens an Walmart product",
             "result": {
               "status": "passed",
-              "duration": 25069000000
+              "duration": 15082000000
             }
           },
           {
@@ -252,7 +252,7 @@
             "name": "A user validates payment types",
             "result": {
               "status": "passed",
-              "duration": 41000000
+              "duration": 53000000
             }
           },
           {
@@ -262,7 +262,7 @@
             "name": "A user validates product details",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 26000000
             }
           },
           {
@@ -272,7 +272,7 @@
             "name": "A user validates product price",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 41000000
             }
           },
           {
@@ -282,7 +282,7 @@
             "name": "A user validates product rating",
             "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 29000000
             }
           },
           {
@@ -292,7 +292,7 @@
             "name": "A user validates product title",
             "result": {
               "status": "passed",
-              "duration": 18000000
+              "duration": 23000000
             }
           },
           {
@@ -302,7 +302,7 @@
             "name": "A user clicks the add to cart button",
             "result": {
               "status": "passed",
-              "duration": 1629000000
+              "duration": 1615000000
             }
           },
           {
@@ -312,7 +312,7 @@
             "name": "A user clicks the buy button",
             "result": {
               "status": "passed",
-              "duration": 122000000
+              "duration": 94000000
             }
           },
           {
@@ -322,7 +322,7 @@
             "name": "The user will be on the cart page",
             "result": {
               "status": "passed",
-              "duration": 6077000000
+              "duration": 5874000000
             }
           },
           {
@@ -332,7 +332,7 @@
             "name": "The user validates there are 2 products in the cart",
             "result": {
               "status": "passed",
-              "duration": 1024000000
+              "duration": 1053000000
             }
           }
         ]
@@ -352,7 +352,7 @@
             "name": "A user opens an Macy's product",
             "result": {
               "status": "passed",
-              "duration": 11942000000
+              "duration": 8100000000
             }
           },
           {
@@ -362,7 +362,7 @@
             "name": "A user validates payment types",
             "result": {
               "status": "passed",
-              "duration": 37000000
+              "duration": 14000000
             }
           },
           {
@@ -372,7 +372,7 @@
             "name": "A user validates product details",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 22000000
             }
           },
           {
@@ -382,7 +382,7 @@
             "name": "A user validates product price",
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 21000000
             }
           },
           {
@@ -392,7 +392,7 @@
             "name": "A user validates product rating",
             "result": {
               "status": "passed",
-              "duration": 14000000
+              "duration": 19000000
             }
           },
           {
@@ -402,7 +402,7 @@
             "name": "A user validates product title",
             "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 19000000
             }
           },
           {
@@ -412,7 +412,7 @@
             "name": "A user clicks the add to cart button",
             "result": {
               "status": "passed",
-              "duration": 1697000000
+              "duration": 1501000000
             }
           },
           {
@@ -422,7 +422,7 @@
             "name": "A user clicks the buy button",
             "result": {
               "status": "passed",
-              "duration": 82000000
+              "duration": 126000000
             }
           },
           {
@@ -432,7 +432,7 @@
             "name": "The user will be on the cart page",
             "result": {
               "status": "passed",
-              "duration": 5918000000
+              "duration": 2114000000
             }
           },
           {
@@ -442,7 +442,7 @@
             "name": "The user validates there are 2 products in the cart",
             "result": {
               "status": "passed",
-              "duration": 1031000000
+              "duration": 1055000000
             }
           }
         ]

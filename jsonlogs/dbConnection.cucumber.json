@@ -22,7 +22,7 @@
             "name": "the user try to connect to the Database",
             "result": {
               "status": "passed",
-              "duration": 536000000
+              "duration": 387000000
             }
           }
         ]

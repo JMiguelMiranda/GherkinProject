@@ -1,0 +1,20 @@
+cypress/screenshots/carrito.feature/Cart -- Cart - Apply coupon (failed).png
+cypress/screenshots/carrito.feature/Cart -- Cart - Change product amount (failed).png
+cypress/screenshots/carrito.feature/Cart -- Cart - Delete product button (failed).png
+cypress/screenshots/checkout.feature/Checkout -- Success payment (failed).png
+cypress/videos/carrito.feature.mp4
+cypress/videos/checkout.feature.mp4
+cypress/videos/dbConnection.feature.mp4
+cypress/videos/login.feature.mp4
+cypress/videos/product.feature.mp4
+jsonlogs/carrito.cucumber.json
+jsonlogs/checkout.cucumber.json
+jsonlogs/dbConnection.cucumber.json
+jsonlogs/login.cucumber.json
+jsonlogs/product.cucumber.json
+reports/cucumber-htmlreport.html/index.html
+reports/cucumber-htmlreport.html/features/460c8320-6d1e-4a67-aa0d-e669194b7336-connection-to-mysqldb.html
+reports/cucumber-htmlreport.html/features/0353522b-6a63-4f92-baed-6384013b73c3-cart.html
+reports/cucumber-htmlreport.html/features/d1e191f5-4a6f-4215-b3dd-88b330b15616-login.html
+reports/cucumber-htmlreport.html/features/f952ca83-259f-42ca-ac77-c7b1b8fb6674-product.html
+reports/cucumber-htmlreport.html/features/f961f369-4336-4793-9edc-99be8724ccbc-checkout.html
