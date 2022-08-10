@@ -49,6 +49,11 @@ Then('The user will be logged in', () => {
     loginPage.validateCustomerName();
 })
 
-Then('The user will receive the error message: {string}', (errorMessage) => {
+Then('Will be on the home page', () => {
+    loginPage.validateCurrentPage();
+})
+
+Then('The user will receive the error message: {string} at the login page', (errorMessage) => {
+    cy.url().should('include', '/customer/account/login');
     loginPage.validateErrorMessage(errorMessage);
 })

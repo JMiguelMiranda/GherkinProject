@@ -13,7 +13,8 @@ class loginPage{
         customerNameLabel: () => cy.get('.dropdown-button > span'),
         errorMessageLabel: () => cy.get('.message-error'),
         menuBtn: () => cy.get('.dropdown-button'),
-        profileBtn: () => cy.get('[href="https://preprod.tiendamia.com.do/customer/account/"]')
+        profileBtn: () => cy.get('[href="https://preprod.tiendamia.com.do/customer/account/"]'),
+        miniBanner: () => cy.get(':nth-child(1) > .info-card')
     }
 
     typeName(name){
@@ -62,8 +63,13 @@ class loginPage{
     }
 
     validateCustomerName(){
-        this.elements.customerNameLabel().should('contain', 'test test')
+        this.elements.customerNameLabel().should('contain', 'test test');
     }
+
+    validateCurrentPage(){
+        this.elements.miniBanner().should('be.visible');
+    }
+
     clickMenuButton(){
         this.elements.menuBtn().click();
     }
