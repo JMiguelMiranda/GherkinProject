@@ -10,6 +10,7 @@
     "test2": "npm run pretest && npm run scripts",
     "clean:reports": "rm -r jsonlogs",
     "pretest": "npm run clean:reports"
+    
   },
   "author": "",
   "license": "ISC",

@@ -1,0 +1,5 @@
+package.json
+cypress/videos/
+jsonlogs/
+reports/
+cypress/screenshots/
