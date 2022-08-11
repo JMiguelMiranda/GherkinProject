@@ -17,7 +17,7 @@ function queryTestDb(query, config) {
 }
 
 module.exports = defineConfig({
-    chromeWebSecurity: false,
+    chromeWebSecurity: true,
     defaultCommandTimeout: 20000,
     execTimeout: 60000,
     pageLoadTimeout: 600000,

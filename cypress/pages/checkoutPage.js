@@ -18,7 +18,7 @@ class checkoutPage{
     }
     
     fillCreditCardInfo() {
-        this.elements.paypalPaymentButton().click();
+        // this.elements.paypalPaymentButton().click();
         cy.wait(7000);
         cy.get('[id^="jsx-iframe-"]').then(iframeContainer => {
             cy.wrap(iframeContainer)
